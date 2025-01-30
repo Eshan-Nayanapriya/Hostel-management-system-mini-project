@@ -1,0 +1,61 @@
+.studentData {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 150px);
+}
+
+#form1 {
+    background-color: rgb(221, 255, 223);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+#form1 input[type="text"] {
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#form1 input[type="submit"],
+.home-btn {
+    width: 48%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#form1 input[type="submit"] {
+    background-color: rgb(3, 59, 3);
+    color: white;
+}
+
+#form1 input[type="submit"]:hover {
+    background-color: rgb(5, 70, 70);
+}
+
+.home-btn {
+    background-color: #ffc107;
+    color: black;
+    font-weight: bold;
+}
+
+.home-btn:hover {
+    background-color: #e0a800;
+}

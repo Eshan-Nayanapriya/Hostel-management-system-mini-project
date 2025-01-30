@@ -1,0 +1,85 @@
+.addStudent {
+    background-color: rgb(111, 231, 107);
+    color: black;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+    float: right;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.addStudent:hover {
+    background-color: green;
+    color: white;
+}
+
+.search-bar {
+    width: 60%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-left:50px;
+}
+
+table, td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+tr > th {
+    background-color: teal;
+    color: white;
+}
+
+.td6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.td6 > button {
+    margin-right: 10px;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+} 
+
+.td6 > button:nth-child(1) {
+    background-color: green;
+}
+
+.td6 > button:nth-child(2) {
+    background-color: red;
+}
+
+.td6  > button:nth-child(3) {
+    background-color: black;
+}
+
+#absent {
+    background-color: red;
+}
