@@ -23,6 +23,35 @@ footer{
     text-align: center;
     padding: 20px;
     transition: color 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logout-btn {
+    margin: 20px;
+}
+
+.btnbox{
+    background-color: rgb(183, 49, 47);
+    color: black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+    font-size:medium;
+    cursor: pointer;
+    margin: 10px 20px;
+    float: right;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btnbox:hover {
+    background-color: #ff1a1a;
 }
 
 /* -------------- login form -------------- */

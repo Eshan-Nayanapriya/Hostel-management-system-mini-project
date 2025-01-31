@@ -23,13 +23,17 @@ function displayFun(studentDataArr) {
     var btn1 = document.createElement("button");
     btn1.innerHTML = "Present";
     btn1.addEventListener("click", function () {
-      td6.innerHTML = "<button>Present</button>";
+      item.attendance = "present";
+      localStorage.setItem("studentData", JSON.stringify(studentDataArr));
+      displayFun(studentDataArr);
     });
 
     var btn2 = document.createElement("button");
     btn2.innerHTML = "Absent";
     btn2.addEventListener("click", function () {
-      td6.innerHTML = "<button id='absent'>Absent</button>";
+      item.attendance = "absent";
+      localStorage.setItem("studentData", JSON.stringify(studentDataArr));
+      displayFun(studentDataArr);
     });
 
     var btn3 = document.createElement("button");
@@ -45,7 +49,14 @@ function displayFun(studentDataArr) {
     });
 
     td6.classList.add("td6");
-    td6.append(btn1, btn2, btn3);
+    if (item.attendance === "present") {
+      td6.innerHTML = "<button>Present</button>";
+    } else if (item.attendance === "absent") {
+      td6.innerHTML = "<button id='absent'>Absent</button>";
+    } else {
+      td6.append(btn1, btn2);
+    }
+    td6.append(btn3);
 
     tr.append(td1, td2, td3, td4, td6);
 
@@ -59,6 +70,12 @@ function searchStudent() {
     return student.regNo.toLowerCase().includes(searchValue);
   });
   displayFun(filteredData);
+}
+
+function confirmLogout() {
+  if (confirm("Are you sure you want to logout?")) {
+    window.location.href = "index.html";
+  }
 }
 
 displayFun(studentDataArr);
